@@ -3,14 +3,9 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-size: 100%;  
+  font-size: 100%;
+  
 }
-
-body {
-  background-image: url(img/ceunoite.jpeg);
-  font-family: "Harry Potter";
-  font-size: 1.5rem;
-  list-style: none;
 
 body{
   background-image: url(img/ceunoite.jpeg);
@@ -35,20 +30,21 @@ main{
   margin-top: 100px;
   margin-left: 350px; 
   width: 50%;
+ 
 }
 
 a {
   color: yellow;
 }
+
 a:hover {
   opacity: 0.9;
   color: rgb(137, 18, 18);
 }
-nav {
-  display: flex;
+  
 
-  justify-content: space-evenly;
-  padding: 20px
+.menuWeb {
+  display: flex;
   flex-direction:initial;
   align-items: center;
   height: 7vh;
@@ -58,7 +54,6 @@ nav {
 
 li {
   list-style: none;
-
 }
 
 .itens {
@@ -66,13 +61,6 @@ li {
   display: flex;
   margin-left: 160px;
  
-
-  gap: 30px;
-}
-
-.inicio {
-  padding-top: 400px;
-
 
 }
 
@@ -99,68 +87,28 @@ li {
   display: flex;
   gap: 40px;
   padding: 20px;
-  margin-left: 340px;
-  
-  
-}
-.sessaoInput {
-  display: flex;
-  gap: 40px;
-  padding: 20px;
   margin-left: 340px;  
 }
 
 H1 {
-
   font-size: 110px;
+  margin-top: -190px;
   color: yellow;
   text-align: center;
 }
 
-
-.cards {
-  background: white;
-  height: 400px;
-  width: 200px;
-}
-
-.animation-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 37px;
-}
-
-.sessaoInput {
-  display: flex;
-  gap: 10px;
-  padding: 37px;
-}
-
-.dev {
-  color: rgb(248, 25, 147);
-  text-align: center;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 20px;
-}
-
-.animation-cards{
-  background-color: rgb(122, 7, 7);
-}
-
 #listaPerso{
  color: yellow;
+  
 }
-
 #listaPerso:hover {
   opacity: 0.9;
   color: rgb(137, 18, 18);
 }
-
 #exibir1{
   text-align: center;
-}
 
+}
 .animation-cards{
   background:rgb(137, 18, 18);
   margin-top: -50px;
@@ -222,9 +170,43 @@ H1 {
   align-items: center;
   list-style-type:lower-alpha;
   font-family: 'Courier New', Courier, monospace;
+
 }
 
 .feitiços{
   background-color: beige;
   word-wrap: break-word;
+}
+
+
+
+.menuMobile{
+  display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .menuWeb {
+      padding: 1.5rem 4rem;
+    }
+    .item {
+      display: none;
+    }
+    .menuMobile ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+    .menuMobile .item{
+      display: block;
+      padding: 1rem 2rem;
+    }
+    #btn-mobile {
+      color:red;
+      border: nome;
+      cursor: pointer;
+      justify-content: end;
+    }
+    .open {
+      display: block;
 }
