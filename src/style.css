@@ -7,8 +7,12 @@
   font-size: 100%;
 }
 
+<<<<<<< HEAD
 /*class container, armazena header com nav,ul,img section, input,select,section, p , main,section,footer*/
 body {
+=======
+body{
+>>>>>>> origin
   background-image: url(img/ceunoite.jpeg);
   font-family: "Harry Potter";
   font-size: 1.5rem;
@@ -25,9 +29,18 @@ header {
   align-items: center;
 }
 
+<<<<<<< HEAD
 /*uma div dentro do header para exibição ampla*/
 
 /*nav dentro do header para navegação do campo busca*/
+=======
+a:hover {
+  opacity: 0.9;
+  color: rgb(137, 18, 18);
+}
+  
+
+>>>>>>> origin
 .menuWeb {
   display: flex;
   justify-content: center;
@@ -61,10 +74,16 @@ a:hover {
 /*campo de imput e select e botões para navegação*/
 .sessaoInput {
   display: flex;
+<<<<<<< HEAD
   gap: 50px;
   padding: 60px;
   justify-content: center;
   align-items: center;
+=======
+  gap: 40px;
+  padding: 20px;
+  margin-left: 340px;  
+>>>>>>> origin
 }
 
 #az {
@@ -183,6 +202,7 @@ footer {
   flex-direction: column;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 730px) {
   /*display: flex;
     flex-direction: column;
@@ -279,3 +299,42 @@ footer {
     display: block;
   }
 }
+=======
+.feitiços{
+  background-color: beige;
+  word-wrap: break-word;
+}
+
+
+
+.menuMobile{
+  display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .menuWeb {
+      padding: 1.5rem 4rem;
+    }
+    .item {
+      display: none;
+    }
+    .menuMobile ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+    .menuMobile .item{
+      display: block;
+      padding: 1rem 2rem;
+    }
+    #btn-mobile {
+      color:red;
+      border: nome;
+      cursor: pointer;
+      justify-content: end;
+    }
+    .open {
+      display: block;
+}
+>>>>>>> origin

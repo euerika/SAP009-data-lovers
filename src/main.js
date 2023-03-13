@@ -1,11 +1,17 @@
 import data from "./data/harrypotter/harry.js";
 import {
   harryFunçoes,
+<<<<<<< HEAD
   selecionaNomeAz,
   selecionaNomeZa,
   calcPorcentagem,
   filtrarCasa,
   filtrarPersonagemCasa,
+=======
+  //filtroCasa,
+  selectNameAz,
+  selectNameZa,
+>>>>>>> origin
 } from "./data.js";
 
 const animationCards = document.querySelector(".animation-cards");
@@ -93,7 +99,17 @@ buttonZa.addEventListener("click", () => {
   animationCards.innerHTML = animationCardsHTML;
 });
 
+function menuShow(){
+  const menuMobile = document.querySelector("#btn-mobile")
+  if (menuMobile.classList.contains('open')){
+    menuMobile.classList.remove("open");
+  } else {
+    menuMobile.classList.add("open")
+  }
+}
+menuShow()
 //VER TODAS AS CASAS
+<<<<<<< HEAD
 const selecionarPersonagemPorCasa = document.getElementById("selectFiltros");
 selecionarPersonagemPorCasa.addEventListener("change", function (event) {
   const valor = event.target.value;
@@ -143,3 +159,38 @@ selecionarPersonagemPorCasa.addEventListener("change", function (event) {
     .join("");
   // animationCards.innerHTML = listaNome;
 });
+=======
+// const selectCharacters = document.getElementById("selectFiltros");
+// selectCharacters.addEventListener("change", function (event) {
+//   const listCharacterHouseFilter = allPersonagens;
+//   let listName;
+//   if (event.target.value === "VerTodos") {
+//     todosPersonagens();
+//   } else {
+//     listName = filterHouse(event.target.value, allPersonagens);
+
+//     console.log("house");
+//   }
+//   listCharacterHouseFilter.innerHTML = listName.map().join("");
+// });
+
+//function filtrarCasa() {
+//const valorSelecionaCasa = document.getElementById("selectFiltros");
+//valorSelecionaCasa.addEventListener("change", filtrarCasa);
+//console.log(valorSelecionaCasa);
+//const casaSelecinoda = valorSelecionaCasa.value;
+//const selecioneCasa = filtrarCasa(allPersonagens, valorSelecionaCasa);
+
+//animationCards(selecioneCasa);
+//}
+//valorSelecionaCasa.valorSelecionaCasa("change", filtrarCasa);
+
+//responsividade
+
+const botaoMobile = document.getElementById("btn-mobile");
+botaoMobile.addEventListener("click", toggleMenu);
+function toggleMenu() {
+  const nav = document.getElementById("nav");
+  nav.classList.toggle("active");
+}
+>>>>>>> origin
