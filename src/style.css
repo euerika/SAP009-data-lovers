@@ -60,13 +60,11 @@ li {
   list-style: none;
   display: flex;
   margin-left: 160px;
- 
-
 }
 
 .itens li {
   letter-spacing: 2px;
- margin-left: 100px;
+ margin-left: 120px;
 }
 
 .menu div {
@@ -77,12 +75,12 @@ li {
 }
 
 .imgMenu {
-  width: 90%; /200vh/
-  height: 98vh; /110vh/
+  width: 90%; 
+  height: 98vh;
   opacity: 0.6;
   margin-top: -50px;
-  /-10px/
 }
+
 .sessaoInput {
   display: flex;
   gap: 40px;
@@ -101,12 +99,24 @@ H1 {
  color: yellow;
   
 }
+.msgCalc{
+  color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+  font-size:25px;
+  margin-left: 290px;
+  
+
+}
+
 #listaPerso:hover {
   opacity: 0.9;
   color: rgb(137, 18, 18);
 }
 #exibir1{
   text-align: center;
+  border-radius: 10px;
+  background-color:  yellow;
+  border:rgb(137, 18, 18);
 
 }
 .animation-cards{
@@ -178,10 +188,9 @@ H1 {
   word-wrap: break-word;
 }
 
-
-
 .menuMobile{
   display: none;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 730px) {
@@ -209,4 +218,4 @@ H1 {
     }
     .open {
       display: block;
-}
+    }

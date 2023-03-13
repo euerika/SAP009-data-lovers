@@ -15,10 +15,10 @@
 
 <body class="continer">
   <header>
-    
-   
-      <nav class="menuWeb">
-      <!--<nav class="navegadores">-->      
+
+
+    <nav class="menuWeb">
+      <!--<nav class="navegadores">-->
       <ul class="itens">
         <li><a class="item" id="listaPerso">Personagens </a></li>
         <li><a class="item" id="listaLivros">Coleção de livros</a></li>
@@ -27,7 +27,7 @@
       </ul>
     </nav>
     <div>
-      <div class="menuMobile">                
+      <div class="menuMobile">
         <ul class="itens">
           <li><a class="item" id="listaPerso">Personagens </a></li>
           <li><a class="item" id="listaLivros">Coleção de livros</a></li>
@@ -35,13 +35,12 @@
           <li><a class="item" id="listaCuriosidades">Curiosidades</a></li>
         </ul>
         <div class=" botaoLateral">
-          <button onclick="menuShow()" class="btn" id="btn-mobile">        
-         
-        </button>
-        </div>
-      </nav>
-    </div>
+          <button onclick="menuShow()" class="btn" id="btn-mobile">
 
+          </button>
+        </div>
+        </nav>
+      </div>
 
     </div>
     <div>
@@ -49,30 +48,31 @@
     </div>
     <section class="sessaoInput">
       <input type="text" nome="" id="exibir1" placeholder="Pesquisar">
-      <a class="pesquisa-botao">
-        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#fff" class="bi bi-search" viewBox="0 0 16 16">
-          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-        </svg>
-      </a>
+
       <select class="select" id="selectFiltros">
-        <option value="VerTodos">Personagens</option>
+        <option value="VerTodos" disabled selected>Personagens</option>
         <option value="Gryffindor">Gryffindor</option>
         <option value="Ravenclaw">Ravenclaw</option>
         <option value="Slytherin">Slytherin</option>
         <option value="Hufflepuff">Hufflepuff</option>
       </select>
-
+  
       <button id="az">Ordem A-Z</button>
       <button id="za">Ordem Z-A</button>
     </section>
+
+    <section class = msgCalc>
+      <p id="mensagemCalculo">
+      </p>
+    </section>
+
   </header>
   <main class="principal">
-
+    
 
     <section>
       <div class="animation-cards" id="exibir1">
         <div class="feitiços" id="exibir2">
-
         </div>
     </section>
 
