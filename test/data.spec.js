@@ -1,5 +1,4 @@
-import {
-  calcPorcentagem,
+import {calcPorcentagem,
   harryFunçoes,
   filtrarPersonagemCasa,
   selecionaNomeAz,
@@ -117,8 +116,10 @@ describe("Teste selectNameAz", () => {
 
   it('should returns `O primeiro nome da ordem de A-Z "Cedrico"`', () => {
     expect(listaOrdenada[0].name).toBe("Cedrico");
+
   });
 });
+
 
 describe("Teste selectNameZa", () => {
   it("is a function", () => {
@@ -141,7 +142,17 @@ describe("Teste selectNameZa", () => {
 
   it('should returns `O primeiro nome da ordem de Z-A "Rony"`', () => {
     expect(listaOrdenadaZa[0].name).toBe("Rony");
+
   });
+
+//FILTRAR CASA
+describe("filtraCasa é uma função", () => {
+  it("is a function", () => {
+    expect(typeof filtarCasa).toBe("function");
+  });
+  it ("ele retorna um array", () =>{
+    expect( ).tobe(personagens.house)
+  })
 });
 //campo de busca
 describe("Teste filterFind", () => {
@@ -153,6 +164,7 @@ describe("filterHouse", () => {
   it("deveria ser uma função", () => {
     expect(typeof filtrarPersonagemCasa).toBe("function");
   });
+
 
   it('deveria retornar "Luna" para "Hufflepuff"', () => {
     expect(filtrarPersonagemCasa(personagensData, "Hufflepuff")).toEqual([
@@ -247,4 +259,5 @@ describe("Teste filterFind", () => {
 });
 
 });
+
 
