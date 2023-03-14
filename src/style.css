@@ -7,12 +7,8 @@
   font-size: 100%;
 }
 
-<<<<<<< HEAD
 /*class container, armazena header com nav,ul,img section, input,select,section, p , main,section,footer*/
 body {
-=======
-body{
->>>>>>> origin
   background-image: url(img/ceunoite.jpeg);
   font-family: "Harry Potter";
   font-size: 1.5rem;
@@ -29,18 +25,9 @@ header {
   align-items: center;
 }
 
-<<<<<<< HEAD
 /*uma div dentro do header para exibição ampla*/
 
 /*nav dentro do header para navegação do campo busca*/
-=======
-a:hover {
-  opacity: 0.9;
-  color: rgb(137, 18, 18);
-}
-  
-
->>>>>>> origin
 .menuWeb {
   display: flex;
   justify-content: center;
@@ -59,48 +46,42 @@ a:hover {
   margin: 5px;
 }
 a {
-  color: yellow;
+  color: #d3a625;
 }
 a:hover {
   opacity: 0.9;
-  color: rgb(137, 18, 18);
+  color: #ae0001;
 }
 .imgLogo {
   width: 90%;
   margin: auto;
+  margin-top: 70px;
   padding: 5px;
 }
 
 /*campo de imput e select e botões para navegação*/
 .sessaoInput {
   display: flex;
-<<<<<<< HEAD
   gap: 50px;
   padding: 60px;
   justify-content: center;
   align-items: center;
-=======
-  gap: 40px;
-  padding: 20px;
-  margin-left: 340px;  
->>>>>>> origin
+  font-size: 75%;
 }
 
 #az {
   text-align: center;
-  border-radius: 5px;
-  background-color: yellow;
-  color: rgb(137, 18, 18);
-  font-size: 80%;
+  border-radius: 10px;
+  background-color: #d3a625;
+  color: #ae0001;
   padding: 3px;
 }
 
 #za {
   text-align: center;
-  border-radius: 5px;
-  background-color: yellow;
-  color: rgb(137, 18, 18);
-  font-size: 80%;
+  border-radius: 10px;
+  background-color: #d3a625;
+  color: #ae0001;
   padding: 3px;
 }
 
@@ -108,23 +89,22 @@ a:hover {
 #exibir1 {
   text-align: center;
   border-radius: 8px;
-  background-color: yellow;
-  color: rgb(137, 18, 18);
-  font-size: 80%;
-  padding: 3px;
+  background-color: #d3a625;
+  color: #ae0001;
   cursor: pointer;
   justify-content: end;
 }
 
-.select {
-  color: rgb(137, 18, 18);
-  border-radius: 5%;
-  cursor: pointer;
-  background-color: rgb(227, 224, 224);
-  font-size: smaller;
+::-webkit-input-placeholder {
+  color: #ae0001;
 }
 
-.select :hover {
+.select {
+  color: #ae0001;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #d3a625;
+  margin: 5px;
 }
 
 /* section que armazena p vazio para apresentar resultado de tamplat JS de função de claculo*/
@@ -155,7 +135,7 @@ a:hover {
   /*justify-content: space-between;
   align-items: center;
   /*flex-direction: column;*/
-  margin: 10px -50px 10px 10px;
+  margin: 10px -50px 10px 20px;
   background-image: url(img/CartaHogwartas.jpg);
   background-repeat: no-repeat;
   width: 18rem;
@@ -181,9 +161,12 @@ a:hover {
   font-family: "Courier New", Courier, monospace;
   text-align: center;
   font-size: 15px;
+  margin-top: 10px;
+  margin-right: 50px;
 }
 
 footer {
+  margin-top: 30px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -202,34 +185,35 @@ footer {
   flex-direction: column;
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 730px) {
   /*display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 0.5rem;*/
   header {
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
   }
 
   .menuWeb {
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin: 5% 0;
+    margin: 0;
   }
 
   .itens {
+    margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 10%;
     font-size: 60%;
-    justify-content: space-between;
     text-align: center;
     cursor: pointer;
   }
@@ -241,7 +225,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 2px;
+    padding: 20px;
   }
 
   .sessaoInput {
@@ -257,9 +241,6 @@ footer {
     font-size: smaller;
   }
 
-  .select :hover {
-  }
-
   .botao {
     display: flex;
     align-items: center;
@@ -267,74 +248,10 @@ footer {
     flex-direction: row;
   }
 
-  #dev {
+  footer {
     color: rgb(253, 253, 250);
     text-align: center;
     font-family: "Courier New", Courier, monospace;
-    font-size: 10px;
-  }
-
-  .dev {
-    display: none;
-  }
-
-  .menuMobile ul {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 1rem;
-    font-size: smaller;
-  }
-  .menuMobile .item {
-    display: block;
-    padding: 1rem 2rem;
-  }
-  #btn-mobile {
-    color: red;
-    border: nome;
-    cursor: pointer;
-    justify-content: end;
-  }
-  .open {
-    display: block;
+    font-size: 5px;
   }
 }
-=======
-.feitiços{
-  background-color: beige;
-  word-wrap: break-word;
-}
-
-
-
-.menuMobile{
-  display: none;
-}
-
-@media screen and (max-width: 730px) {
-    .menuWeb {
-      padding: 1.5rem 4rem;
-    }
-    .item {
-      display: none;
-    }
-    .menuMobile ul {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      padding-bottom: 1rem;
-    }
-    .menuMobile .item{
-      display: block;
-      padding: 1rem 2rem;
-    }
-    #btn-mobile {
-      color:red;
-      border: nome;
-      cursor: pointer;
-      justify-content: end;
-    }
-    .open {
-      display: block;
-}
->>>>>>> origin
