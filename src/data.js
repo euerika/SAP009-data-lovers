@@ -34,5 +34,7 @@ export const filtrarPersonagemCasa = (personagens, casa) => {
 };
 //CÁLCULO AGREGADO
 export const calcPorcentagem = (todos, parte) => {
-  return ((todos / parte) * 100).toFixed(2);
+
+  return ((parte / todos) *100).toFixed(2);
+
 };
