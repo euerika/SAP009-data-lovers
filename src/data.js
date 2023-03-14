@@ -1,3 +1,6 @@
+
+//FILTRO VER TODOS personagens
+
 export function harryFunçoes(nome, listaPersonagensFiltrados) {
   return listaPersonagensFiltrados.filter((harry) => harry.name.includes(nome));
 }
@@ -22,6 +25,7 @@ export const selecionaNomeZa = (personagens) => {
 };
 //FILTRO POR CASAS
 export const filtrarPersonagemCasa = (personagens, casa) => {
+
   const resultadoCasas = personagens.filter(function(personagem) {
     if (personagem.house === null) {
       return false
@@ -35,4 +39,5 @@ export const filtrarPersonagemCasa = (personagens, casa) => {
 export const calcPorcentagem = (todos, parte) => {
   return ((parte/ todos)).toFixed(2);
 };
+
 

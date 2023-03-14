@@ -1,11 +1,14 @@
 import data from "./data/harrypotter/harry.js";
 import {
-  harryFunçoes,  
+
+  harryFunçoes,
+
   selecionaNomeAz,
   selecionaNomeZa,
   calcPorcentagem,
   filtrarCasa,
-  filtrarPersonagemCasa
+
+  filtrarPersonagemCasa,
 
 } from "./data.js";
 
@@ -25,7 +28,6 @@ function exibirPersonagens() {
           <p id="nomePersonagens" class="infoPersonagens"><b>${element.name}</b></p>
           <p class="infoPersonagens"><b>Espécie:</b>${element.species}</p>
           <p class="infoPersonagens"><b>Livro:</b>${element.books_featured_in}</p>
-          <p class="infoPersonagens"><b>Idade:</b>${element.death}</p>
           <p class="infoPersonagens"><b>Casa:</b>${element.house}</p>
         </div>
       `;
@@ -81,14 +83,14 @@ buttonZa.addEventListener("click", () => {
   const animationCardsHTML = ordenadoZa
     .map((element) => {
       return `      
-      <div class="cards"> 
-        <p id="nomePersonagens" class="infoPersonagens"><b>${element.name}</b></p>
-        <p class="infoPersonagens"><b>Espécie:</b>${element.species}</p>
-        <p class="infoPersonagens"><b>Livro:</b>${element.books_featured_in}</p>
-        <p class="infoPersonagens"><b>Idade:</b>${element.death}</p>
-        <p class="infoPersonagens"><b>Casa:</b>${element.house}</p>
-      </div>
-    `;
+  <div class="cards"> 
+    <p id="nomePersonagens" class="infoPersonagens"><b>${element.name}</b></p>
+    <p class="infoPersonagens"><b>Espécie:</b>${element.species}</p>
+    <p class="infoPersonagens"><b>Livro:</b>${element.books_featured_in}</p>
+    <p class="infoPersonagens"><b>Idade:</b>${element.death}</p>
+    <p class="infoPersonagens"><b>Casa:</b>${element.house}</p>
+  </div>
+`;
     })
     .join("");
   animationCards.innerHTML = animationCardsHTML;
@@ -98,6 +100,7 @@ buttonZa.addEventListener("click", () => {
 const selecionarPersonagemPorCasa = document.getElementById("selectFiltros");
 selecionarPersonagemPorCasa.addEventListener("change", function (event) {
   const valor = event.target.value;
+
   const listaPersonagensFiltradosPorCasa = filtrarPersonagemCasa(todosPersonagens, valor);
   animationCards.innerHTML = listaPersonagensFiltradosPorCasa
     .map((element) => {
@@ -109,6 +112,7 @@ selecionarPersonagemPorCasa.addEventListener("change", function (event) {
       <p class="infoPersonagens"><b>Idade:</b>${element.death}</p>
       <p class="infoPersonagens"><b>Casa:</b>${element.house}</p>
     </div>
+
 `;
     })
     .join("");
@@ -129,6 +133,7 @@ selecionarPersonagemPorCasa.addEventListener("change", function (event) {
   animationCards.innerHTML = listaNome
     .map((element) => {
       return `         
+
     <div class="cards">  
     <p id="nomePersonagens" class="infoPersonagens"><b>${element.name}</b></p>
     <p class="infoPersonagens"><b>Espécie:</b>${element.species}</p>
@@ -137,6 +142,7 @@ selecionarPersonagemPorCasa.addEventListener("change", function (event) {
     <p class="infoPersonagens"><b>Casa:</b>${element.house}</p>
   </div>
         `;
+
     })
     .join("");
   // animationCards.innerHTML = listaNome;

@@ -12,10 +12,9 @@ Desenvolvemos uma página contendo informações sobre todos os personagens da s
 * [6. Hacker edition](#6-hacker-edition)
 * [7. Considerações técnicas](#7-considerações-técnicas)
 * [8. Pistas, dicas e leituras
-  complementares](#8-pistas-dicas-e-leituras-complementares)
-* [9. Checklist](#9-checklist)
 
-***
+
+ 
 
 ## 1. Sobre Harry Potter
 

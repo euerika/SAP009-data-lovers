@@ -1,151 +1,148 @@
-import {
-  selectNameAz,
-  selectNameZa,
-  orderName,
-  calcPorcentagem,
-  filtrarCasa,
-  filtrarPersonagemCasa
-} from "../src/data.js";
+import {calcPorcentagem,
+  harryFunçoes,
+  filtrarPersonagemCasa,
+  selecionaNomeAz,
+  selecionaNomeZa,
+} from "../src/data";
 
-const harry = {
-  name: "Harry Potter",
-  house: "Gryffindor",
-};
+const personagensData = [
+  {
+    name: "Hermione",
+    house: "Gryffindor",
+  },
+  {
+    name: "Draco",
+    house: "Slytherin",
+  },
+  {
+    name: "Luna",
+    house: "Hufflepuff",
+  },
+  {
+    name: "Albino peacock",
+    house: null,
+  },
+  {
+    name: "Gilderoy Lockhart",
+    house: "Ravenclaw",
 
-const ron = {
-  name: "Ronald Weasley",
-  house: "Gryffindor",
-};
+  }
 
-const hermione = {
-  name: "Hermione Granger",
-  house: "Gryffindor",
-};
+  },
 
-const avery = {
-  name: "Avery I",
-  house: "Slytherin",
-};
-
-const malcolm = {
-  name: "Malcolm Baddock",
-  house: "Slytherin",
-};
-
-const bloody = {
-  name: "Bloody Baron",
-  house: "Slytherin",
-};
-
-const stewart = {
-  name: "Stewart Ackerley",
-  house: "Ravenclaw",
-};
-
-const marcus = {
-  name: "Marcus Belby",
-  house: "Ravenclaw",
-};
-
-const terry = {
-  name: "Terry Boot",
-  house: "Ravenclaw",
-};
-
-const cadwallader = {
-  name: "Cadwallader",
-  house: "Hufflepuff",
-};
-
-const owen = {
-  name: "Owen Cauldwell",
-  house: "Hufflepuff",
-};
-
-const cedric = {
-  name: "Cedric Diggory",
-  house: "Hufflepuff",
-};
-
-const african = {
-  name: "African prince",
-  house: null,
-};
-
-const albino = {
-  name: "Albino peacock",
-  house: null,
-};
-
-const personagens = [
-  harry,
-  ron,
-  hermione,
-  avery,
-  malcolm,
-  bloody,
-  marcus,
-  stewart,
-  terry,
-  cadwallader,
-  owen,
-  cedric,
-  albino,
-  african,
 ];
-
-describe("orderName é uma função", () => {
+//calculo
+describe("Teste calcularPorcentagem", () => {
   it("is a function", () => {
-    expect(typeof orderName).toBe("function");
+    expect(typeof harryFunçoes).toBe("function");
+  });
+  it("should calculate percentage", () => {
+    expect(calcPorcentagem(1, 5)).toBe(20);
+
+  });
+});
+//filtro ver todos
+describe('searchBar', () => {
+  it('deveria ser uma função', () => {
+    expect(typeof harryFunçoes).toBe("function");
+  });
+  
+  it('deveria retornar "Hermione" para "Hermione"', () => {
+    expect(harryFunçoes(personagensData, "Hermione")).toEqual([personagensData[0]]);
+  });
+});
+
+
+// filtro por casa
+describe('filterHouse', () => {
+  it('deveria ser uma função', () => {
+    expect(typeof filtrarPersonagemCasa).toBe('function');
   });
 
-  describe("selectNameAz é uma função", () => {
-    it("is a function", () => {
-      expect(typeof selectNameAz).toBe("function");
-    });
-  it("Deve selectNameAz de A-Z", () => {
-    const resultado = selectNameAz(personagens);
-    //expect(resultado).toEqual([
-      african,
-      albino,
-      avery,
-      bloody,
-      cadwallader,
-      cedric,
-      harry,
-      hermione,
-      malcolm,
-      marcus,
-      owen,
-      ron,
-      stewart,
-      terry,
-    //]);
-    expect(resultado[0]).toBe(["African prince"]);
+  it('deveria retornar "Luna" para "Hufflepuff"', () => {
+    expect(filtrarPersonagemCasa(personagensData, "Hufflepuff")).toEqual([personagensData[2]]);
+
+  });
+});
+//filtro ver todos
+describe("searchBar", () => {
+  it("deveria ser uma função", () => {
+    expect(typeof harryFunçoes).toBe("function");
   });
 
-  describe("selectNameZa é uma função", () => {
-    it("is a function", () => {
-      expect(typeof selectNameZa).toBe("function");
-    });
-  it("Deve ordernar de Z-A", () => {
-    const resultado = selectNameZa(personagens);
-    expect(resultado).toEqual([
-      terry,
-      stewart,
-      ron,
-      owen,
-      marcus,
-      malcolm,
-      hermione,
-      harry,
-      cedric,
-      cadwallader,
-      bloody,
-      avery,
-      albino,
-      african,
+  it('deveria retornar "Hermione" para "Hermione"', () => {
+    expect(harryFunçoes(personagensData, "Hermione")).toEqual([
+      personagensData[0],
     ]);
+
+  });
+});
+
+
+  it('deveria retornar "Hermione" para "Gryffindor"', () => {
+    expect(filtrarPersonagemCasa(personagensData, "Gryffindor")).toEqual([personagensData[0]]);
+  });
+
+  it('deveria retornar "Draco" para "Slytherin"', () => {
+    expect(filtrarPersonagemCasa(personagensData, "Slytherin")).toEqual([personagensData[1]]);
+  });
+
+  it('deveria retornar "Gilderoy Lockhart" para "Ravenclaw"', () => {
+    expect(filtrarPersonagemCasa(personagensData, "Ravenclaw")).toEqual([personagensData[4]]);
+  });
+});
+// ordenação
+describe("Teste selectNameAz", () => {
+  it("is a function", () => {
+    expect(typeof selecionaNomeAz).toBe("function");
+  });
+
+  const HarryPotterAz = [
+    {
+      name: "Harry",
+      house: "Gryffindor",
+    },
+    {
+      name: "Severo",
+      house: "Slytherin",
+    },
+    {
+      name: "Cedrico",
+      house: "Hufflepuff",
+    },
+  ];
+
+  const listaOrdenada = selecionaNomeAz(HarryPotterAz);
+
+  it('should returns `O primeiro nome da ordem de A-Z "Cedrico"`', () => {
+    expect(listaOrdenada[0].name).toBe("Cedrico");
+
+  });
+});
+
+
+describe("Teste selectNameZa", () => {
+  it("is a function", () => {
+    expect(typeof selecionaNomeZa).toBe("function");
+  });
+
+  const HarryPotterZa = [
+    {
+      name: "Lucio",
+      house: "Slytherin",
+    },
+    {
+      name: "Rony",
+      house: "Gryffindor",
+    },
+
+  ];
+
+  const listaOrdenadaZa = selecionaNomeZa(HarryPotterZa);
+
+  it('should returns `O primeiro nome da ordem de Z-A "Rony"`', () => {
+    expect(listaOrdenadaZa[0].name).toBe("Rony");
+
   });
 
 //FILTRAR CASA
@@ -157,61 +154,110 @@ describe("filtraCasa é uma função", () => {
     expect( ).tobe(personagens.house)
   })
 });
+//campo de busca
+describe("Teste filterFind", () => {
+  it("is a function", () => {
+    expect(typeof harryFunçoes).toBe("function");
 
-describe(" ", () => {
-  it('is a true para ""', () => {
-    expect(filtroCasa("")).toBe(Boolean);
+// filtro por casa
+describe("filterHouse", () => {
+  it("deveria ser uma função", () => {
+    expect(typeof filtrarPersonagemCasa).toBe("function");
   });
 
-  it('is a true para "Hufflepuff"', () => {
-    expect(filtroCasa("Hufflepuff")).toBe(true);
+
+  it('deveria retornar "Luna" para "Hufflepuff"', () => {
+    expect(filtrarPersonagemCasa(personagensData, "Hufflepuff")).toEqual([
+      personagensData[2],
+    ]);
   });
 
-  it('is a true para "Ravenclaw"', () => {
-    expect(filtroCasa("Ravenclaw")).toBe(true);
+  it('deveria retornar "Hermione" para "Gryffindor"', () => {
+    expect(filtrarPersonagemCasa(personagensData, "Gryffindor")).toEqual([
+      personagensData[0],
+    ]);
   });
 
-  it('is a retornar false para "Slytherin"', () => {
-    expect(filtroCasa("Slytherin")).toBe(true);
+  it('deveria retornar "Draco" para "Slytherin"', () => {
+    expect(filtrarPersonagemCasa(personagensData, "Slytherin")).toEqual([
+      personagensData[1],
+    ]);
   });
 
-  it('is a retornar false para "Gryffindor "', () => {
-    expect(filtroCasa("Gryffindor ")).toBe(true);
-  });
-
-  it('is a retornar false para "null"', () => {
-    expect(filtroCasa("null")).toBe(false);
+  it('deveria retornar "Gilderoy Lockhart" para "Ravenclaw"', () => {
+    expect(filtrarPersonagemCasa(personagensData, "Ravenclaw")).toEqual([
+      personagensData[4],
+    ]);
   });
 });
-//CÁLCULO AGREGAD
-// describe("calcPercentage", () => {
-//   it("is a  function ", () => {
-//     expect(typeof calcPorcentagem).toBe("function");
-//   });
-  
-//     it("retorna % de personagens de cada casa selecionadas , quanto é o total?", () => {
-//       const totalDEcasasCasaSelecionada = calculo(dummyData, ["nome", "Gryffindor"]);
-//       expect(totalDEcasasCasaSelecionada).toBe("x % são da casa Gryffindor");
-//     });
-  
-//     it("return total ravenclaw characters", () => {
-//       const totalDEcasasCasaSelecionada = calculo(dummyData, ["nome", "Ravenclaw"]);
-//       expect(totalDEcasasCasaSelecionada).toBe("x % são da casa Ravenclaw");
-       
-//     });
-  
-//     it("return total hufflepuff characters", () => {
-//       const totalDEcasasCasaSelecionada = calculo(dummyData, ["nome", "Hufflepuff"]);
-//       expect(totalDEcasasCasaSelecionada).toBe("x % são da casa Hufflepuff");
-//     });
-  
-//     it("return total slytherin characters", () => {
-//       const totalDEcasasCasaSelecionada = calculo(dummyData, ["nome", "Slytherin"]);
-//       expect(totalDEcasasCasaSelecionada).toBe("x % são da casa Slytherin");
-//     });
-//   });
+// ordenação
+describe("Teste selectNameAz", () => {
+  it("is a function", () => {
+    expect(typeof selecionaNomeAz).toBe("function");
+  });
 
-// //describe('harryFunçoes retornora um array com todos os nome'), () => {
-//   it('harryFunçoes deveria ser uma função', () =>{
-//     expect(typeof harryFunçoes).toBe('function');
-//   });
+  const HarryPotterAz = [
+    {
+      name: "Harry",
+      house: "Gryffindor",
+    },
+    {
+      name: "Severo",
+      house: "Slytherin",
+    },
+    {
+      name: "Cedrico",
+      house: "Hufflepuff",
+    },
+  ];
+
+  const listaOrdenada = selecionaNomeAz(HarryPotterAz);
+
+  it('should returns `O primeiro nome da ordem de A-Z "Cedrico"`', () => {
+    expect(listaOrdenada[0].name).toBe("Cedrico");
+  });
+});
+
+describe("Teste selectNameZa", () => {
+  it("is a function", () => {
+    expect(typeof selecionaNomeZa).toBe("function");
+  });
+
+  const HarryPotterZa = [
+    {
+      name: "Lucio",
+      house: "Slytherin",
+    },
+    {
+      name: "Rony",
+      house: "Gryffindor",
+    },
+  ];
+
+  const listaOrdenadaZa = selecionaNomeZa(HarryPotterZa);
+
+  it('should returns `O primeiro nome da ordem de Z-A "Rony"`', () => {
+    expect(listaOrdenadaZa[0].name).toBe("Rony");
+  });
+});
+//campo de busca
+describe("Teste filterFind", () => {
+  it("is a function", () => {
+    expect(typeof harryFunçoes).toBe("function");
+  });
+
+
+  it('should returns "[{ Name: "Hermione", House: "Gryffindor"}]" ', () => {
+    expect(harryFunçoes("Hermione", personagensData)).toStrictEqual([
+      {
+        name: "Hermione",
+        house: "Gryffindor",
+      },
+    ]);
+  });
+
+});
+
+});
+
+
