@@ -24,7 +24,6 @@ function exibirPersonagens() {
           <p id="nomePersonagens" class="infoPersonagens"><b>${element.name}</b></p>
           <p class="infoPersonagens"><b>Espécie:</b>${element.species}</p>
           <p class="infoPersonagens"><b>Livro:</b>${element.books_featured_in}</p>
-          <p class="infoPersonagens"><b>Idade:</b>${element.death}</p>
           <p class="infoPersonagens"><b>Casa:</b>${element.house}</p>
         </div>
       `;
