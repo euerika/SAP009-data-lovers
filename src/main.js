@@ -9,7 +9,6 @@ import {
 } from "./data.js";
 
 const animationCards = document.querySelector(".animation-cards");
-
 const linkPersonagens = document.getElementById("listaPerso");
 linkPersonagens.addEventListener("click", exibirPersonagens);
 const todosPersonagens = data.characters;
@@ -52,7 +51,7 @@ campoBusca.addEventListener("keyup", function (event) {
     .join("");
 });
 
-//FILTRO A - Z
+//FILTRO A - Z dos personagens
 const buttonAz = document.getElementById("az");
 buttonAz.addEventListener("click", () => {
   const ordenadoAz = selecionaNomeAz(data.characters);
