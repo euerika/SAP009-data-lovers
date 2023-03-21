@@ -209,7 +209,6 @@ footer {
     margin: 0;
   }
 
-
   .itens {
     margin: 0;
     display: flex;
@@ -217,8 +216,7 @@ footer {
     gap: 10%;
     font-size: 60%;
     text-align: center;
-    cursor: pointer;
-    
+    cursor: pointer;    
   }
 
   .imgLogo {
