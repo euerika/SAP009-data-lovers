@@ -1,8 +1,7 @@
 # Data Lovers
 Este foi o segundo projetoque desenvolvemos na Laboratória. O objetivo deste projeto é converter dados em informações compreensível para o usuário.
-Desenvolvemos uma página contendo informações sobre todos os personagens da saga Harry Potter onde se pode obter informações e curiosidades sobre os personagens. Segundo a Forbes 90% dos dados que existem hoje foram gerados durante os últimos dois anos. A cada dia geramos 2.5 milhões de terabytes de dados, uma cifra sem precedentes. Acesse aqui 
 
-
+Desenvolvemos uma página contendo informações sobre todos os personagens da saga Harry Potter onde se pode obter informações e curiosidades sobre os personagens. Segundo a Forbes 90% dos dados que existem hoje foram gerados durante
 ## Índice
 
 * [1. Sobre Harry Potter](#1-sobre-harry-potter)
@@ -18,7 +17,8 @@ Desenvolvemos uma página contendo informações sobre todos os personagens da s
 
 ## 1. Sobre Harry Potter
 
-É uma série que comtém sete aventuras de fantasia e magias escrita pela autora britânica J. K. Rowling.Conta a história e aventuras de um menino de 11 anos que descobre ser um bruxo e é convidado a estudar na escola de magia e bruxaria de Hogwarts. O lançamento do seu primeiro livro foi 26 de junho de 1997, os livros da saga ganharam uma grande popularização mundial, posteriormente tornando a série a best-seller da história, sendo traduzida para 73 idiomas. Os últimos quatro livros consecutivamente foram considerados os mais vendidos da história, sendo que o último livro vendeu cerca de 11 milhões de cópias nos Estados Unidos nas primeiras 24 horas após o seu lançamento.
+É uma série de sete romances de fantasia escrita pela autora britânica J. K. Rowling.Conta a história e aventuras de um menino de 11 anos que descobre ser um bruxo e é convidado a estudar na escola de magia e bruxaria de Hogwarts. O lançamento do seu primeiro livro foi 26 de junho de 1997, os livros da saga ganharam uma grande popularização mundial, posteriormente tornando a série a best-seller da história, sendo traduzida para 73 idiomas. Os últimos quatro livros consecutivamente foram considerados os mais vendidos da história, sendo que o último livro vendeu cerca de 11 milhões de cópias nos Estados Unidos nas primeiras 24 horas após o seu lançamento.
+
 
 ## 2. Produto
 
@@ -101,7 +101,4 @@ Quando o usuário clica na aba personagens, no campo busca, select e nos botões
    <img height="150" widtht="150" style="border-radius:5px;" src="https://user-images.githubusercontent.com/114299360/225187073-c984ba4c-0d79-4485-b9fb-8cce8ac6120d.jpeg">
 </div><br>
 
-<div>
-   
-</div><br>
 
