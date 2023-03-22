@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harry Potter data-lovers </title>
+  <link href=" https://fonts.cdnfonts.com/css/harry-potter " rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!--criar menu navegação superior responsivo
+1º quais informações vão aparecer no menu, cabeçalho header (tag semantica html recebe o cabeçalho do site)-->
+
+<body class="continer">
+  <header>
+    
+   
+      <nav class="menuWeb">
+      <!--<nav class="navegadores">-->      
+      <ul class="itens">
+        <li><a class="item" id="listaPerso">Personagens </a></li>
+        <li><a class="item" id="listaLivros">Coleção de livros</a></li>
+        <li><a class="item" id="listaFeitiços"> Feitiços </a></li>
+        <li><a class="item" id="listaCuriosidades">Curiosidades</a></li>
+      </ul>
+    </nav>
+    <div>
+      <div class="menuMobile">                
+        <ul class="itens">
+          <li><a class="item" id="listaPerso">Personagens </a></li>
+          <li><a class="item" id="listaLivros">Coleção de livros</a></li>
+          <li><a class="item" id="listaFeitiços"> Feitiços </a></li>
+          <li><a class="item" id="listaCuriosidades">Curiosidades</a></li>
+        </ul>
+        <div class=" botaoLateral">
+          <button onclick="menuShow()" class="btn" id="btn-mobile">        
+         
+        </button>
+        </div>
+      </nav>
+    </div>
+
+
+    </div>
+    <div>
+      <img class="imgLogo" src="img/harryharry.png.png">
+    </div>
+    <section class="sessaoInput">
+      <input type="text" nome="" id="exibir1" placeholder="Pesquisar">
+      <a class="pesquisa-botao">
+        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#fff" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+        </svg>
+      </a>
+      <select class="select" id="selectFiltros">
+        <option value="VerTodos">Personagens</option>
+        <option value="Gryffindor">Gryffindor</option>
+        <option value="Ravenclaw">Ravenclaw</option>
+        <option value="Slytherin">Slytherin</option>
+        <option value="Hufflepuff">Hufflepuff</option>
+      </select>
+
+      <button id="az">Ordem A-Z</button>
+      <button id="za">Ordem Z-A</button>
+    </section>
+  </header>
+  <main class="principal">
+
+
+    <section>
+      <div class="animation-cards" id="exibir1">
+        <div class="feitiços" id="exibir2">
+
+        </div>
+    </section>
+
+
+  </main>
+  <footer>
+
+    <div id="social">
+      <a href="https://www.linkedin.com/" target="_blank">
+      </a>
+      <a href="https://github.com/" target="_blank">
+      </a>
+    </div>
+    <p id="dev">Projeto desenvolvido durante o Bootcamp pelas alunas: Erika Santos & Thalita Nascimento</p>
+
+    <p class="dev">
+      <Laboratória> Projeto Data Lovers
+    </p>
+
+  </footer>
+
+
+
+
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
