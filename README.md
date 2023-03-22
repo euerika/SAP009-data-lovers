@@ -6,7 +6,7 @@ Desenvolvemos uma página contendo informações sobre todos os personagens da
 saga Harry Potter onde se pode obter informações e curiosidades sobre os
 personagens. Segundo a Forbes 90% dos dados que existem hoje foram gerados
 durante os últimos dois anos. A cada dia geramos 2.5 milhões de terabytes
-de dados, uma cifra sem precedentes. Acesse aqui
+de dados, uma cifra sem precedentes. [Acesse aqui](https://euerika.github.io/SAP009-data-lovers/)
 
 ## Índice
 
